@@ -1,0 +1,1222 @@
+@font-face {
+	font-family: 'Pacifico';
+	src:url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src:url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	src:url(../fonts/Montserrat-Bold.ttf);
+}
+
+/*-------------Estilos base--------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--global-brown: rgb(182, 136, 52);
+	--dark-brown: rgb(162, 116, 42);
+	--select-brown: rgb(122, 86, 22);
+}
+
+body {
+	font-family: 'Montserrat';
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+html {
+	scroll-behavior:smooth;
+}
+
+.line-hr {
+	border:1px solid #ccc;
+	margin-bottom: 20px;
+}
+/*----------Estilos del header-----------*/
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+.div {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+.header-logo {
+	font-family: 'Pacifico', cursive;
+	font-weight: 100;
+	background: var(--global-brown);
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+.header-content {
+	padding: 8px 0 8px 0;
+	background-color: #fff;
+	color: rgb(162, 116, 32);
+}
+
+.icon-location {
+	color: ;
+}
+
+/*-------------Estilos del menu-------------*/
+
+.logo {
+	display: none;
+}
+
+.icon-bars {
+	display: block;
+	color: var(--global-brown);
+	border: 1px solid var(--global-brown);
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	line-height: 45px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.5em;
+	float: right;
+	margin: 70px 10px 0 0;
+}
+
+.menu {
+	position: absolute;
+	width: 100%;
+	background-color: var(--global-brown);
+	text-align: center;
+	top: -150%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.mostrar {
+	opacity: 1;
+	top: 121px;
+}
+
+.menu__item {
+	list-style: none;
+}
+
+.menu__link {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding:10px;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.select {
+	background: var(--select-brown);
+}
+
+.icon-home, .icon-cloud-download,
+.icon-phone, .icon-user {
+	position: relative;
+	font-size: 18px;
+	top: 2px;
+	right: 5px;
+}
+
+.menu__link:hover {
+	background: var(--select-brown);
+}
+
+/*-------------Estilos del banner-------------*/
+
+.banner {
+	margin-top: 121px;
+	background-image: url(../img/banner1.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	margin-bottom: 80px;
+}
+
+.banner__color {
+	background:rgba(0,0,0,.2);
+	padding: 180px 30px 180px 30px;
+}
+
+.banner__content {
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.banner__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.banner__txt {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.banner__buttons {
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	margin: 20px 0 20px 0;
+}
+
+.banner__buttons-link {
+	text-decoration: none;
+	color: #fff;
+	border:1px solid #fff;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.banner-home {
+	background: var(--dark-brown);
+	border: 1px solid transparent;
+	margin-right: 25px;
+	transition: background .3s;
+}
+
+.banner-home:hover {
+	background: none;
+	border: 1px solid var(--dark-brown);
+}
+
+/*----Estilos de bienvenida y experiencia----*/
+
+.welcome, .experience {
+	margin-bottom: 80px;
+}
+
+.welcome__img, .experience__img {
+	height: 300px;
+}
+
+.welcome__container, .experience__container {
+	margin:5px;
+}
+
+.welcome__title, .experience__title {
+	text-align: center;
+	color: var(--global-brown);
+	font-size: 18px;
+}
+
+.welcome__txt, .experience__txt {
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.welcome-p {
+	margin-top:12px;
+	text-align: center;
+}
+
+.welcome__link {
+	text-decoration: none;
+	border-radius: 4px;
+	background: none;
+	color: var(--global-brown);
+	padding: 10px;
+	font-size: 14px;
+	box-shadow: 0px 0px 5px var(--global-brown);
+	transition: all .5s;
+}
+
+.welcome__link:hover {
+	box-shadow: 0px 0px 30px var(--global-brown);
+}
+
+/*-------------Nuestro personal-------------*/
+
+.our-personal {
+	margin-bottom: 60px;
+}
+
+.our-personal-title {
+	text-align: center;
+	color: var(--global-brown);
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+
+.chefs {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.chefs-img {
+	width: 280px;
+	height: 280px;
+	margin: auto;
+	border-radius: 50%;
+	border:5px solid rgb(182, 136, 52);
+}
+
+.chefs__content {
+	margin-top: 10px;
+}
+
+.chefs-name {
+	font-size: 18px;
+	color: brown;
+}
+
+/*-------------Nuestros cafés-------------*/
+
+.column__coffee-container {
+	margin-bottom: 60px;
+	width: 90%;
+}	
+
+.column__coffee-content {
+	margin:0 4px 0 4px;
+}
+
+.column__coffee {
+	margin-bottom: 20px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 30px #ccc;
+}
+
+.column__coffee-img {
+	height: 200px;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+
+.column__coffee-container-title {
+	text-align: center;
+	color: var(--global-brown);
+	margin: auto;
+	padding-bottom: 7px;
+	margin-bottom: 40px;
+	letter-spacing: 3px;
+	font-size: 22px;
+	border-bottom: 4px solid var(--global-brown);
+	width: 250px;
+}
+
+.column__coffee-text {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.column__coffee-title {
+	font-size: 18px;
+	color: var(--global-brown);
+}
+
+.column__coffee-price {
+	font-size: 14px;
+	color: rgb(160,160,160);
+}
+
+/*-------------Nuestros postres-------------*/
+
+.column__container {
+	margin-bottom: 20px;
+	width: 90%;
+}
+
+.column__content {
+	margin:0 4px 0 4px;
+}
+
+.column {
+	margin-bottom: 20px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 30px #ccc;
+}
+
+.column__img {
+	height: 200px;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.column__container-title {
+	text-align: center;
+	color: var(--global-brown);
+	letter-spacing: 3px;
+	margin: auto;
+	padding-bottom: 7px;
+	margin-bottom: 40px;
+	font-size: 22px;
+	border-bottom: 4px solid var(--global-brown);
+	width: 290px;
+}
+
+.column__text {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.column__title {
+	font-size: 18px;
+	color: var(--global-brown);
+}
+
+.column__price {
+	font-size: 14px;
+	color: rgb(160,160,160);
+}
+
+/*-------------Gallery-------------*/
+
+.gallery-title {
+	text-align: center;
+	color: var(--global-brown);
+	letter-spacing: 3px;
+	width: 130px;
+	margin: auto;
+	border-bottom: 4px solid var(--global-brown);
+	margin-bottom: 15px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-rows: repeat(2, 180px);
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 180px;
+	grid-gap: 8px;
+	list-style: none;
+	grid-auto-flow: ;
+}
+
+.gallery__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.5s;
+}
+
+.gallery__li:first-child {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.gallery__li:nth-child(11) {
+	grid-column: 3 / 5;
+}
+
+.gallery__li:nth-child(13) {
+	grid-column: 1 / 3;
+}
+
+.gallery__li:nth-child(15) {
+	grid-column: 3 / 5;
+}
+
+.gallery__img:hover {
+	transform: scale(1.02);
+}
+
+/*---------- Gallery modal ------------*/
+
+.gallery__modal {
+	display: none;
+}
+
+.gallery__modal:target {
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.gallery__modal--overflow {
+	overflow: hidden;
+}
+
+.gallery__modal-close {
+	font-size: 20px;
+	text-decoration: none;
+	background: #fff;
+	color: #000;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	float: right;
+}
+
+.gallery__modal-title {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.gallery__modal-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery__modal-content a {
+	font-size: 40px;
+	color: #fff;
+	text-decoration: none;
+	background: #fff;
+	color: #000;
+	margin:7px;
+	padding: 8px;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+
+.gallery__modal-content a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.gallery__modal-img {
+	width: 500px;
+	height: 100%;
+	object-fit: cover;
+	border:7px solid #fff;
+	box-sizing: border-box;
+}
+
+/*------------- Gallery - Paginación -----------*/
+
+	   #active > .pag-link{
+	   	background: rgb(225,100,0);
+	   }
+	  .paginacion {
+	  	margin: 15px auto;
+	  	text-align: center;
+	  }
+
+      ul > .li{
+      	list-style: none;
+      	display: inline-block;
+      	margin-right:7px;
+      }
+      ul > .li > .pag-link {
+      	color: #FFFFFF;
+      	text-decoration: none;
+      	padding: 10px 17px 10px 17px;
+        display: block;
+		background: var(--global-brown); /* Old browsers */
+		border-radius: 50%;
+      }
+      .btn > .pag-link {
+      	padding: ;
+		background: brown; /* Old browsers */
+	    border-radius: ;
+		text-align: center;
+		width:;
+      }
+
+/*-------------Nuestros servicios-------------*/
+.service__container {
+	margin-bottom: 80px;
+}
+.service__column {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 30px #ccc;
+	transition: all .5s;
+}
+
+.service__column:hover {
+	transform: translateY(-12px);
+}
+
+.service__column-img {
+	object-fit: cover;
+	height: 250px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.service__column-text {
+	padding: 20px;
+}
+
+.service__column-title {
+	font-size: 18px;
+	color: var(--global-brown);
+	margin-bottom: 5px;
+}
+
+/*-------------Home delivery-------------*/
+
+.home__delivery {
+	background-image: url(../img/home_delivery.jpg);
+	background-size: 450px 100%;
+	background-repeat: ;
+	margin-bottom: 100px;
+}
+
+.home__delivery-background {
+	background: rgba(0, 0, 0, .3);
+	padding: 40px 0 40px 0;
+}
+
+.home__delivery-column {
+	text-align: center;
+}
+.home__delivery-column--1 {
+	padding: 0 10px 0 10px;	
+	box-sizing: border-box;
+}
+.home__delivery-column--2 {
+	display: none;
+}
+
+.home__delivery-title,
+.home__delivery-txt {
+	color: #fff;
+}
+
+.home__delivery-title,
+.reservation__table-title {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.home__delivery-txt,
+.reservation__table-txt {
+	font-size: 14px;
+	margin-bottom: 10px;
+	line-height: 22px;
+	text-align: left;
+}
+
+.home__delivery-button {
+	background: var(--dark-brown);
+	padding: 13px 10px;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	width: 200px;
+	transition: background .3s;
+}
+
+.home__delivery-button:hover {
+	background: var(--global-brown);
+}
+/*------------- Reservation -------------*/
+.reservation__table-background {
+	padding: 80px 0 80px 0;
+	margin-bottom: 40px;
+}
+.reservation__table-title {
+	color: var(--global-brown);
+}
+.reservation__table-column {
+	text-align: center;
+}
+.reservation__table-column--1 {
+	margin-bottom: 20px;
+}
+.reservation__table-column--2 {
+	padding: 0 10px 0 10px;
+	box-sizing: border-box;
+}
+.reservation__table-button {
+	background: var(--dark-brown);
+	padding: 13px 10px;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	width: 200px;
+	transition: background .3s;
+}
+.reservation__table-button:hover {
+	background: var(--global-brown);
+}
+/*-------------Info de contacto-------------*/
+
+.contact-us-title, .service-title, .about-title {
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: var(--global-brown);
+	letter-spacing: 4px;
+}
+
+.contact-us {
+	margin-bottom: 20px;
+}
+
+.contact-info {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	border-bottom: 5px solid var(--global-brown);
+	padding-bottom: 20px;
+}
+
+.contact-info-title {
+	text-align: center;
+	color: var(--global-brown);
+}
+
+.contact-info-title, .contact-info-txt {
+	margin-bottom: 15px;
+}
+
+.contact-info-txt {
+	line-height: 30px;
+}
+
+.icon-global {
+	line-height: 30px;
+	color: var(--global-brown);
+}
+
+/*-------------Formulario contacto-------------*/
+
+.contact-form-container-title {
+	text-align: center;
+	margin-bottom: 15px;
+	color: var(--global-brown);
+}
+
+.contact-form-container {
+	width: 90%;
+	margin: auto;
+}
+
+.contact-form input {
+	width: 100%;
+	height: 40px;
+}
+
+.contact-form input[type='text'], textarea {
+	margin-bottom: 10px;
+	font-size: 14px;
+	padding-left: 7px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+.contact-form textarea {
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	height: 100px;
+	max-height: 140px;
+	min-height: 60px;
+	font-family: 'Montserrat';
+	padding-top: 7px;
+	resize: none;
+}
+
+.contact-form input[type='submit'] {
+	border: none;
+	border-radius: 6px;
+	font-weight: bold;
+	color: var(--global-brown);
+	transition: background .3s;
+}
+
+.contact-form input[type='submit']:hover {
+	cursor: pointer;
+}
+
+/*-----------------Acerca de----------------*/
+.dark-brown {
+	background: var(--dark-brown);
+	padding: 30px 0 30px 0;
+	margin-bottom: 20px;
+}
+.about__column {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.about__column-dark {
+	margin: 0;
+}
+.about__column--column1,
+.about__column--column2 {
+	width: 48%;
+	height: 100%;
+}
+
+.about__column--column1-dark {
+	display: flex;
+	justify-content: right;
+}
+
+.about__column-img,
+.about__column-img-dark {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	margin-right: ;
+	object-fit: cover;
+}
+
+.about__column-name,
+.about__column-name-dark {
+	font-size: 22px;
+	color: brown;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.about__column-name-dark {
+	color: #fff;
+}
+.about__column-txt,
+.about__column-txt-dark {
+	line-height: 30px;
+}
+
+.about__column-txt-dark {
+	text-align: right;
+}
+
+/*-----------------Button up----------------*/
+
+.button-up-container {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.button-up {
+	border:1px solid brown;
+	border-radius: 50%;
+	padding: 10px;
+	width: 20px;
+	text-align: center;
+	color: brown;
+	text-decoration: none;
+	float: right;
+}
+
+/*-----------------Footer----------------*/
+
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.footer__column {
+	margin-bottom: 20px;
+}
+.footer__column-title {
+	margin-bottom: 10px;
+}
+.footer__column-txt {
+	line-height: 25px;
+}
+.copy {
+    text-align: center;
+    margin:auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+@media screen and (min-width: 480px) {
+	.welcome, .experience {
+		display: flex;
+		justify-content: space-around;
+	}
+	.welcome__img, .experience__img {
+		object-fit: cover;
+	}
+	.welcome__img, .welcome__container,
+	.experience__img, .experience__container {
+		width: 45%;
+	}
+	.welcome__title, .experience__title {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+	.welcome__txt, .experience__txt {
+		font-size: 16px;
+		text-align: justify;
+	}
+	.welcome {
+		margin-bottom: 80px;
+	}
+	.experience {
+		margin:0;
+	}
+	.experience__color {
+		background-color: rgb(182, 136, 52);
+		padding: 80px 0;
+		margin-bottom: 80px;
+	}
+	.experience {/*Esta clase tiene container asi que tiene margin:auto. Por eso tiene esa propiedad.*/
+		margin: 0 auto;
+	}
+	.experience__title {
+		color: #fff;
+	}
+	.experience__container {
+		color: #fff;
+	}
+	.welcome__img {
+		margin-right: 5px;
+	}
+	.experience__img {
+		margin-left: 5px;
+	}
+	/*---------Nuestro personal-----------*/
+	.chefs-flex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.chefs {
+		width: 33%;
+	}
+
+	.chefs-img {
+		width: 140px;
+		height: 140px;
+	}
+	/*---------Our coffee-----------*/
+	.column__coffee-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.column__coffee {
+		width: 45%;
+	}
+	/*---------Nuestros postres-----------*/
+	.column__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.column {
+		width: 45%;
+	}
+/*-------------Gallery-------------*/
+    .gallery__modal-img {
+	    width: 500px;
+	    height: 250px;
+	    object-fit: cover;
+	    border:7px solid #fff;
+	    box-sizing: border-box;
+}
+/*-------------Nuestros servicios-------------*/
+    .service__container {
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content:space-around;
+    }
+    .service__column {
+    	width: 36%;
+    	margin-top: 0;
+    }
+	/*-------------Home delivery-------------*/
+	.home__delivery {
+		background-size: 600px 100%;
+	}
+	.home__delivery--flex,
+	.reservation__table--flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	.home__delivery-column,
+	.reservation__table-column {
+		width: 48%;
+	}
+	.home__delivery-column--2 {
+		display: block;
+	}
+	.home__delivery-img {
+		outline: 4px solid #fff;
+	}
+	/*----------- Reservation -----------*/
+	.reservation__table-background {
+		background: rgb(235, 230, 240);
+	}
+	/*---------Info contacto-----------*/
+	.contact-us {
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.contact-info {
+		width: 48%;
+		margin: 0;
+		border-right: 5px solid var(--global-brown);
+		border-bottom: 0;
+		padding: 0;
+		padding-right: 10px;
+	}
+	.contact-form-container {
+		width: 48%;
+		overflow: ;
+		box-sizing: ;
+	}
+	.contact-form {
+		width: 100%;
+		padding-left: 10px;
+		box-sizing: border-box;
+	}
+	.contact-form input, textarea {
+		box-sizing: border-box;
+	}
+	/*---------Acerca de-----------*/
+	.about__column--column1 {
+		width: 43%;
+	}
+	.about__column--column2 {
+		width: 55%;
+	}
+	/*---------Footer-----------*/
+	.footer__column {
+		display: inline-block;
+		width: 32%;
+		vertical-align: top;
+	}
+	.footer__column-title {
+		font-size: 16px;
+	}
+	.footer__column-txt {
+		font-size: 13px;
+	}
+	.copy {
+		font-size: 13px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.banner__content {
+		width: ;
+	}
+	.banner__title {
+		font-size: 30px;
+	}
+	/*-------Bienvenida, experiencia------*/
+	.welcome__title, .experience__title {
+		font-size: 22px;
+	}
+	.experience__color {
+		margin-bottom: ;
+    }
+	/*-----------Personal-----------*/
+	.our-personal {
+    	background-image: url(../img/our-personal.jpg);
+	    background-size: 100% 100%;
+	    background-attachment: fixed;
+	}
+	.our-personal-color {
+		background: rgba(0,0,0,.4);
+		padding: 80px 0 80px 0;
+	}
+	.our-personal-title {
+		color: #fff;
+		font-size: 22px;
+	}
+	.chefs-img {
+		width: 150px;
+		height: 150px;
+	}
+	.chefs-name {
+		font-weight: bold;
+		color: #fff;
+	}
+	.chefs-age {
+		color: #fff;
+	}
+	/*-------Our coffee------*/
+	.column__coffee-container-title {
+		font-size: 22px;
+	}
+	/*-------Nuestros postres------*/
+	.column__container-title {
+		font-size: 22px;
+	}
+/*-------------Nuestros servicios-------------*/
+    .service__column {
+    	width: 24%;
+    }
+/*-------------Home delivery-------------*/
+	.home__delivery {
+		background-size: 800px 100%;
+	}
+/*-------------Contact Us-------------*/
+.contact-form textarea {
+	height: 125px;
+}
+/*-------------Acerca de-------------*/
+	.about__column--column1 {
+		width: 31%;
+	}
+	.about__column--column2 {
+		width: 67%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 1000px;
+	}
+	.header {
+		display: none;
+	}
+	/*----------------Menu-------------------*/
+	.div {
+		width: 100%;
+		z-index: 1;
+		background: rgb(162, 116, 42);
+		height: 56px;
+	}
+	.logo {
+		display: block;
+		z-index: 1;
+		color: #fff;
+		font-family: 'Pacifico';
+		width: 100%;
+		right: 0;
+	}
+	.icon-bars {
+		display: none;
+	}
+	.div-color {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		width: 1000px;
+		left: 5px;
+	}
+	.menu {
+		position: relative;
+		font-size: 14px;
+		display: flex;
+		background: 0;
+		opacity: 1;
+	}
+	.menu__link {
+		background: /*rgb( 196, 125, 85 )*/;
+		padding: 16.5px 9px;
+		transition: background 0.3s;
+	}
+	.menu__link:hover {
+		background: ;
+	}
+	/*------------banner-------------*/
+	.banner {
+		margin-top: 56px;
+	}
+	.banner__title {
+		font-size: 45px;
+	}
+	.banner__txt {
+		font-size: 18px;
+		margin-bottom: 80px;
+	}
+	.banner__buttons-link {
+		font-size: 18px;
+	}
+	/*---------Nuestro personal---------*/
+	.chefs-img {
+		width: 180px;
+		height: 180px;
+	}
+	/*---------Nuestros servicios---------*/
+    .service__column {
+    	width: 26%;
+    }
+	/*-------------Home delivery-------------*/
+	.home__delivery {
+		background-size: 900px 100%;
+	}
+	.home__delivery-background {
+		padding: 100px 0 100px 0;
+	}
+	/*--------Contacto----------*/
+	.contact-us-title {
+		margin-bottom: 50px;
+	}
+	/*-------------Acerca de-------------*/
+    .about__column {
+    	width: ;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+	.container {
+		width: ;
+	}
+	.div-color {
+		left: 183px;
+
+	}	
+}
+
+@media screen and (min-width: 1600px) {
+	.container {
+		width: 1300px;
+	}
+    .banner__color {
+	   padding: 220px 0 220px 0;
+    }
+}
